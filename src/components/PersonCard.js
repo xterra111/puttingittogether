@@ -10,7 +10,7 @@ export class PersonCard extends Component {
 
 	render() {
 		const { lastName, firstName, Age, hairColor } = this.props;
-		//const [ageState, setAgeState] = useState(Age);
+
 		const incrementAge = () => this.setState({ Age: this.state.Age + 1 });
 		return (
 			<div>
@@ -18,7 +18,6 @@ export class PersonCard extends Component {
 					{lastName}, {firstName}
 				</h1>
 				<p>Age: {this.state.Age}</p>
-				{/* <p>Age: {Age}</p> */}
 
 				<p>Hair Color: {hairColor}</p>
 
